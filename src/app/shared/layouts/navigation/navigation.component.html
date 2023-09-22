@@ -1,0 +1,41 @@
+<div
+  id="menubar"
+  class="menubar-inverse"
+  (mouseover)="showMenuOffCanvas()"
+  (mouseout)="hideMenuOffCanvas()"
+>
+  <ng-scrollbar>
+    <div class="menubar-scroll-panel">
+      <!-- BEGIN MAIN MENU -->
+      <ul id="main-menu" class="gui-controls">
+        <!-- BEGIN DASHBOARD -->
+
+        <li
+          *ngFor="let menuItem of menuItems"
+          (click)="hideMenuOffCanvas()"
+          routerLinkActive="active"
+        >
+          <a [routerLink]="[menuItem.path]" routerLinkActive="active">
+            <div class="gui-icon">
+              <i class="fa fa-{{menuItem.icon}}"></i>
+            </div>
+            <span class="title">{{ menuItem.title }}</span>
+          </a>
+        </li>
+      </ul>
+      <!--end .main-menu -->
+      <!-- END MAIN MENU -->
+    </div>
+  </ng-scrollbar>
+  <div class="menubar-foot-panel">
+    <small class="no-linebreak hidden-folded">
+      <a href="#" target="_blank"
+        ><span class="opacity-75"
+          >Copyright &copy; {{ date | date : "yyyy" }}</span
+        >
+        <strong> Smart School</strong></a
+      >
+    </small>
+  </div>
+  <!--end .menubar-scroll-panel-->
+</div>

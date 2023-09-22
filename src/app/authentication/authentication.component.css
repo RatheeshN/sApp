@@ -1,0 +1,345 @@
+:root {
+    --main-bg: #e91e63;
+}
+
+.main-bg {
+    background: var(--main-bg) !important;
+}
+
+input:focus,
+button:focus {
+    border: 1px solid #0f81de !important;
+    box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    background-color: #0f81de !important;
+    border-color: #0f81de !important;
+}
+
+
+.logowrap {
+    width: 200px;
+    display: block;
+    float: left;
+    margin-top: 15px;
+}
+
+.download-btn {
+    transition: .3s all 0s ease-in;
+    opacity: 1;
+    margin: 15px 5px !important;
+    display: inline-block;
+    overflow: hidden;
+    width: 120px;
+}
+
+.download-btn img {
+    width: 100%;
+}
+
+.download-btn:hover {
+    transition: .3s all 0s ease-in;
+    opacity: 1;
+}
+
+.login-btn {
+    color: #fff !important;
+    background: #1e6ab4;
+    padding: 8px 25px;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border-radius: 4px;
+    opacity: 1 !important;
+    padding: 10px !important;
+}
+
+.signup-btn {
+    color: #fff !important;
+    background: #ffc41f !important;
+    padding: 8px 25px;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border-radius: 4px;
+    opacity: 1 !important;
+    padding: 10px !important;
+}
+
+.text-btn {
+    transition: .3s all 0s ease-in;
+    color: #000 !important;
+}
+
+.text-btn:hover {
+    transition: .3s all 0s ease-in;
+    color: #813978 !important;
+}
+
+.loginimg-wrap {
+    background: #f0f3fa;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-image: none;
+    background-size: auto;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-image: none;
+    background-size: auto;
+    height: 900px;
+    background-image: url('../../assets/img/banner.jpg');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.login h1 {
+    color:
+        #000;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 0 !important;
+}
+
+.loginhead {
+    font-size: 35px;
+    font-weight: 400;
+    color: #11124e;
+}
+
+.loginhead span {
+    color: #813978;
+    font-weight: normal;
+}
+
+.login-input {
+    border: #e0e2e5 1px solid;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.check-box {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+.mob-show {
+    display: none;
+}
+
+.link-txt {
+    font-size: 14px;
+}
+
+.form-control {
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif !important;
+    border-bottom-color: navajowhite;
+    border: none !important;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom:
+        #CBCCD5 2px solid !important;
+    border-radius: 0 !important;
+    padding: 15px 0 !important;
+    color:
+        #11124e !important;
+}
+
+.school-logo {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 15px;
+}
+
+.school-logo img {
+    width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: none !important;
+    -webkit-box-sizing: none !important;
+    box-sizing: none !important;
+}
+
+@media (max-width: 1199.98px) {
+    .loginhead {
+        font-size: 25px;
+        font-weight: 400;
+        color:
+            #11124e;
+    }
+
+    .login h1 {
+        color:
+            #000;
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 0 !important;
+    }
+
+    .school-logo {
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 0px;
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        font-size: 15px !important;
+        font-family: 'Poppins', sans-serif !important;
+        border-bottom-color: navajowhite;
+        border: none !important;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        border-bottom:
+            #CBCCD5 2px solid !important;
+        border-radius: 0 !important;
+        padding: 10px 0 !important;
+        color:
+            #11124e !important;
+    }
+
+    .login-btn {
+        color:
+            #fff !important;
+        background:
+            #5a29ff !important;
+        padding: 8px 25px;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        border-radius: 4px;
+        opacity: 1 !important;
+        padding: 10px !important;
+    }
+
+    .signup-btn {
+        color:
+            #fff !important;
+        background:
+            #ffc41f !important;
+        padding: 8px 25px;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        border-radius: 4px;
+        opacity: 1 !important;
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .mob-show {
+        display: block;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .mob-show a {
+        display: inline-block;
+    }
+
+    .logowrap.mob-show {
+        margin: 0 auto;
+        margin-bottom: 0px;
+        float: none;
+        margin-bottom: 15px;
+        width: 130px;
+    }
+
+    .school-logo {
+        width: 120px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 0px;
+        margin-bottom: 0px;
+        margin-bottom: 15px;
+    }
+
+    .loginhead {
+        font-size: 15px;
+        font-weight: 400;
+        color:
+            #11124e;
+    }
+
+    .login h1 {
+        color: #000;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 0 !important;
+    }
+
+    .login .form-control {
+        font-size: 15px !important;
+        font-family: 'Poppins', sans-serif !important;
+        border-bottom-color: navajowhite;
+        border: none !important;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        border-bottom: #CBCCD5 2px solid !important;
+        border-radius: 0 !important;
+        padding: 5px 0 !important;
+        color: #11124e !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .mob-hide {
+        display: none;
+    }
+}
+
+.login-logo {
+    max-width: 100%
+}
+
+@media (max-width: 1024px) {
+    .hide-phone {
+        display: none !important;
+    }
+
+    .mobile-full {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.section-full {
+    height: 100vh;
+}
+
+.login-logo {
+    margin-top: 20px;
+}
+
+.login-logo img {
+    margin: 0 auto;
+}
+
+.tc {
+    text-align: center;
+}

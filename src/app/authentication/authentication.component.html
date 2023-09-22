@@ -1,0 +1,42 @@
+<section class="container login">
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-4 col-md-6 col-sm-6 p-3">
+            <div class="card shadow p-2">
+                <div class="card-title text-center border-bottom">
+                    <img src="https://qcentro.com/wp-content/uploads/2023/06/logoo.png" class="img-responsive" />
+                    <p class="loginhead"><span>School ERP Login</span></p>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="loginForm" class="animated form floating-label form-validate form-login"
+                        (ngSubmit)="login()">
+
+                        <div class="form-group" [ngClass]="{ 'has-error': submitted && f['username'].errors }">
+                            <input type="text" class="form-control" id="username" formControlName="username"
+                                placeholder="User Name">
+                            <span class="help-block" *ngIf="submitted && f['username'].errors">Please Enter
+                                Username</span>
+                        </div>
+                        <div class="form-group" [ngClass]="{ 'has-error': submitted && f['password'].errors }">
+                            <input type="password" class="form-control" id="password" formControlName="password"
+                                required placeholder="Password">
+                            <span class="help-block" *ngIf="submitted && f['password'].errors">Please Enter
+                                Password</span>
+                        </div>
+                        <div style="clear:both !important;"></div>
+                        <label class="FL link-txt">
+                            <input type="checkbox" ng-model="remember">&nbsp;Remember Me
+                        </label>
+                        <a class="FR text-btn link-txt" (click)="show_reset()">Forgot Password?</a>
+                        <div style="clear:both !important;"></div>
+                        <button [disabled]=" loginForm.invalid" class="btn btn-block login-btn mt-3 FR w100 btn-login"
+                            [ngClass]="{ 'disabled': loading }" type="submit">
+                            Login&nbsp;
+                        </button>
+                        <div class="col-md-12 text-danger" *ngIf="invalidCredentials">Invalid Login Credentials</div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

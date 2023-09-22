@@ -1,0 +1,122 @@
+<div id="content">
+    <section>
+        <div class="section-header">
+            <ol class="breadcrumb">
+                <li class="active">Teacher List</li>
+            </ol>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-head">
+                        <header>Teacher List
+                            <button class="btn btn-primary btn-sm float-end" data-bs-toggle="modal" data-bs-target="#myModal">Create Student</button>
+                        </header>
+
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="table-responsive">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+<!--Create Examination-->
+
+<div class="modal createStudent  modal-fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Create Class</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto;max-height: calc(100vh - 190px);">
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+                        <label for="inputEmail4" class="form-label">Name *</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputEmail4" class="form-label">Phone No *</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputPassword4" class="form-label">Class *</label>
+                        <select class="form-control">
+                            <option value="0">Select Class</option>
+                            <option [value]="item" *ngFor="let item of genders"></option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputPassword4" class="form-label">DOB *</label>
+                        <input  class="form-control"  bsDatepicker >
+                        
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputPassword4" class="form-label">Gender</label>
+                        <select class="form-control">
+                            <option value="0">Select Gender</option>
+                            <option [value]="item" *ngFor="let item of genders"></option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" >
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" >
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputEmail4" class="form-label">Guardian Name </label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputEmail4" class="form-label">Guardian Phone </label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="border:none;">
+                <button type="button" class="btn btn-primary btn-raised ink-reaction create_btn" >Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Edit Examination-->
+
+<div class="modal editExamination bs-example-modal-lg modal-fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Edit Exam</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto;max-height: calc(100vh - 190px);">
+                <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="modal-footer" style="border:none;">
+                <button type="button" class="btn btn-info btn-raised ink-reaction create_btn" >Update</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<header id="header">
+    <div class="headerbar">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="headerbar-left">
+            <ul class="header-nav header-nav-options">
+                <li class="header-nav-brand">
+                    <div class="brand-holder">
+                        <a href>
+                            <img src="https://qcentro.com/wp-content/uploads/2023/06/logoo.png">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);" (click)="toggleMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="headerbar-right">
+
+            <!--end .header-nav-options -->
+            <ul class="header-nav header-nav-profile">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" (click)="isShown = !isShown" data-toggle="dropdown">
+                        <img [src]="transform('assets/img/avatar1.jpg')" alt="" />
+                        <span class="profile-info">{{name}}<small>{{userType}}</small></span>
+                    </a>
+                    <ul class="dropdownwrap " [ngClass]="{ 'active': isShown }" ng-controller="NavCtrl">
+                        <li class="divider"></li>
+                        <li><a href="" (click)="logout()"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+                    </ul>
+                    <!--end .dropdown-menu -->
+                </li>
+                <!--end .dropdown -->
+            </ul>
+            <!--end .header-nav-profile -->
+            <!--end .header-nav-toggle -->
+        </div>
+        <!--end #header-navbar-collapse -->
+    </div>
+
+</header>
